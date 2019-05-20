@@ -1,0 +1,813 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4618A94F229096C400F30E3C /* AGDialog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46FBFFC12290955000297E19 /* AGDialog.framework */; };
+		4618A950229096C400F30E3C /* AGDialog.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 46FBFFC12290955000297E19 /* AGDialog.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		46EC04FB2291C053009AE2D7 /* Album_RSS_FeedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EC04FA2291C053009AE2D7 /* Album_RSS_FeedTests.m */; };
+		46EC050A2291C621009AE2D7 /* AlbumEntityParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EC05082291C620009AE2D7 /* AlbumEntityParser.m */; };
+		46EC050D2291CA86009AE2D7 /* AlbumConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EC050C2291CA86009AE2D7 /* AlbumConfigurator.m */; };
+		46EC05102291D0B2009AE2D7 /* AlbumDetailConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EC050F2291D0B2009AE2D7 /* AlbumDetailConfigurator.m */; };
+		46FBFF3F2290910C00297E19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46FBFF3D2290910C00297E19 /* Main.storyboard */; };
+		46FBFF412290910E00297E19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46FBFF402290910E00297E19 /* Assets.xcassets */; };
+		46FBFF442290910E00297E19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46FBFF422290910E00297E19 /* LaunchScreen.storyboard */; };
+		46FBFF472290910E00297E19 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FBFF462290910E00297E19 /* main.m */; };
+		46FBFF6E2290919400297E19 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FBFF6C2290919400297E19 /* AppDelegate.m */; };
+		46FBFF872290925200297E19 /* AGReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FBFF832290925200297E19 /* AGReachabilityManager.m */; };
+		46FBFF882290925200297E19 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FBFF862290925200297E19 /* Reachability.m */; };
+		46FBFF8B2290926B00297E19 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FBFF892290926B00297E19 /* Utils.m */; };
+		46FBFF93229093BE00297E19 /* AlbumWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FBFF91229093BE00297E19 /* AlbumWireframe.m */; };
+		46FBFF99229093F000297E19 /* AlbumEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FBFF98229093F000297E19 /* AlbumEntity.m */; };
+		46FBFF9D2290940500297E19 /* AlbumPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FBFF9C2290940500297E19 /* AlbumPresenter.m */; };
+		46FBFFA32290944300297E19 /* AlbumInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FBFFA12290944300297E19 /* AlbumInteractor.m */; };
+		46FBFFAC2290948100297E19 /* AlbumTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FBFFAA2290948100297E19 /* AlbumTableCell.m */; };
+		46FBFFAD2290948100297E19 /* AlbumView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FBFFAB2290948100297E19 /* AlbumView.m */; };
+		46FBFFB3229094E500297E19 /* AlbumDetailsRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FBFFB2229094E500297E19 /* AlbumDetailsRouter.m */; };
+		46FBFFB7229094F200297E19 /* AlbumDetailsPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FBFFB5229094F200297E19 /* AlbumDetailsPresenter.m */; };
+		46FBFFBB2290950600297E19 /* AlbumDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FBFFBA2290950600297E19 /* AlbumDetailsVC.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46EC04FD2291C053009AE2D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46FBFF2C2290910C00297E19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46FBFF332290910C00297E19;
+			remoteInfo = Album_RSS_Feed;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4618A951229096C400F30E3C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4618A950229096C400F30E3C /* AGDialog.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		46EC04F82291C052009AE2D7 /* Album_RSS_FeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Album_RSS_FeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46EC04FA2291C053009AE2D7 /* Album_RSS_FeedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Album_RSS_FeedTests.m; sourceTree = "<group>"; };
+		46EC04FC2291C053009AE2D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46EC05082291C620009AE2D7 /* AlbumEntityParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumEntityParser.m; sourceTree = "<group>"; };
+		46EC05092291C620009AE2D7 /* AlbumEntityParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumEntityParser.h; sourceTree = "<group>"; };
+		46EC050B2291CA86009AE2D7 /* AlbumConfigurator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlbumConfigurator.h; sourceTree = "<group>"; };
+		46EC050C2291CA86009AE2D7 /* AlbumConfigurator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlbumConfigurator.m; sourceTree = "<group>"; };
+		46EC050E2291D0B2009AE2D7 /* AlbumDetailConfigurator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlbumDetailConfigurator.h; sourceTree = "<group>"; };
+		46EC050F2291D0B2009AE2D7 /* AlbumDetailConfigurator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlbumDetailConfigurator.m; sourceTree = "<group>"; };
+		46FBFF342290910C00297E19 /* Album_RSS_Feed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Album_RSS_Feed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46FBFF3E2290910C00297E19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46FBFF402290910E00297E19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46FBFF432290910E00297E19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		46FBFF452290910E00297E19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46FBFF462290910E00297E19 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		46FBFF6C2290919400297E19 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		46FBFF6D2290919400297E19 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		46FBFF822290923C00297E19 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		46FBFF832290925200297E19 /* AGReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGReachabilityManager.m; sourceTree = "<group>"; };
+		46FBFF842290925200297E19 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		46FBFF852290925200297E19 /* AGReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGReachabilityManager.h; sourceTree = "<group>"; };
+		46FBFF862290925200297E19 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		46FBFF892290926B00297E19 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		46FBFF8A2290926B00297E19 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		46FBFF91229093BE00297E19 /* AlbumWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumWireframe.m; sourceTree = "<group>"; };
+		46FBFF92229093BE00297E19 /* AlbumWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumWireframe.h; sourceTree = "<group>"; };
+		46FBFF95229093D900297E19 /* AlbumWireframeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumWireframeProtocol.h; sourceTree = "<group>"; };
+		46FBFF97229093F000297E19 /* AlbumEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumEntity.h; sourceTree = "<group>"; };
+		46FBFF98229093F000297E19 /* AlbumEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumEntity.m; sourceTree = "<group>"; };
+		46FBFF9B2290940500297E19 /* AlbumPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumPresenter.h; sourceTree = "<group>"; };
+		46FBFF9C2290940500297E19 /* AlbumPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumPresenter.m; sourceTree = "<group>"; };
+		46FBFF9E2290940C00297E19 /* PresenterToInetractorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresenterToInetractorProtocol.h; sourceTree = "<group>"; };
+		46FBFFA12290944300297E19 /* AlbumInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumInteractor.m; sourceTree = "<group>"; };
+		46FBFFA22290944300297E19 /* AlbumInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumInteractor.h; sourceTree = "<group>"; };
+		46FBFFA42290944A00297E19 /* AlbumInteractorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumInteractorProtocol.h; sourceTree = "<group>"; };
+		46FBFFA52290944A00297E19 /* AlbumInteractorOutPutProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumInteractorOutPutProtocol.h; sourceTree = "<group>"; };
+		46FBFFA82290948100297E19 /* AlbumTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumTableCell.h; sourceTree = "<group>"; };
+		46FBFFA92290948100297E19 /* AlbumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumView.h; sourceTree = "<group>"; };
+		46FBFFAA2290948100297E19 /* AlbumTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumTableCell.m; sourceTree = "<group>"; };
+		46FBFFAB2290948100297E19 /* AlbumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumView.m; sourceTree = "<group>"; };
+		46FBFFB0229094AF00297E19 /* AlbumViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumViewProtocol.h; sourceTree = "<group>"; };
+		46FBFFB1229094E500297E19 /* AlbumDetailsRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumDetailsRouter.h; sourceTree = "<group>"; };
+		46FBFFB2229094E500297E19 /* AlbumDetailsRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumDetailsRouter.m; sourceTree = "<group>"; };
+		46FBFFB5229094F200297E19 /* AlbumDetailsPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumDetailsPresenter.m; sourceTree = "<group>"; };
+		46FBFFB6229094F200297E19 /* AlbumDetailsPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumDetailsPresenter.h; sourceTree = "<group>"; };
+		46FBFFB92290950600297E19 /* AlbumDetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumDetailsVC.h; sourceTree = "<group>"; };
+		46FBFFBA2290950600297E19 /* AlbumDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumDetailsVC.m; sourceTree = "<group>"; };
+		46FBFFBE2290951B00297E19 /* AlbumDetailsViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumDetailsViewProtocol.h; sourceTree = "<group>"; };
+		46FBFFC12290955000297E19 /* AGDialog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AGDialog.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46EC04F52291C052009AE2D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46FBFF312290910C00297E19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4618A94F229096C400F30E3C /* AGDialog.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46EC04F92291C053009AE2D7 /* Album_RSS_FeedTests */ = {
+			isa = PBXGroup;
+			children = (
+				46EC04FA2291C053009AE2D7 /* Album_RSS_FeedTests.m */,
+				46EC04FC2291C053009AE2D7 /* Info.plist */,
+			);
+			path = Album_RSS_FeedTests;
+			sourceTree = "<group>";
+		};
+		46EC05112291D90B009AE2D7 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				46EC05092291C620009AE2D7 /* AlbumEntityParser.h */,
+				46EC05082291C620009AE2D7 /* AlbumEntityParser.m */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		46EC05122291D928009AE2D7 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				46EC050B2291CA86009AE2D7 /* AlbumConfigurator.h */,
+				46EC050C2291CA86009AE2D7 /* AlbumConfigurator.m */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		46EC05132291D937009AE2D7 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				46EC050E2291D0B2009AE2D7 /* AlbumDetailConfigurator.h */,
+				46EC050F2291D0B2009AE2D7 /* AlbumDetailConfigurator.m */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		46FBFF2B2290910C00297E19 = {
+			isa = PBXGroup;
+			children = (
+				46FBFF362290910C00297E19 /* Album_RSS_Feed */,
+				46EC04F92291C053009AE2D7 /* Album_RSS_FeedTests */,
+				46FBFF352290910C00297E19 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		46FBFF352290910C00297E19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46FBFF342290910C00297E19 /* Album_RSS_Feed.app */,
+				46EC04F82291C052009AE2D7 /* Album_RSS_FeedTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46FBFF362290910C00297E19 /* Album_RSS_Feed */ = {
+			isa = PBXGroup;
+			children = (
+				46FBFF6B2290918400297E19 /* AppDelegate */,
+				46FBFF6F2290919D00297E19 /* StoryBoards */,
+				46FBFF7D2290920400297E19 /* Constants */,
+				46FBFF75229091DF00297E19 /* Utils */,
+				46FBFF8C2290936300297E19 /* Modules */,
+				46FBFFC02290953A00297E19 /* Libraries */,
+				46FBFF402290910E00297E19 /* Assets.xcassets */,
+				46FBFF452290910E00297E19 /* Info.plist */,
+				46FBFF462290910E00297E19 /* main.m */,
+			);
+			path = Album_RSS_Feed;
+			sourceTree = "<group>";
+		};
+		46FBFF6B2290918400297E19 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				46FBFF6D2290919400297E19 /* AppDelegate.h */,
+				46FBFF6C2290919400297E19 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		46FBFF6F2290919D00297E19 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				46FBFF3D2290910C00297E19 /* Main.storyboard */,
+				46FBFF422290910E00297E19 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		46FBFF70229091BA00297E19 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				46FBFF8A2290926B00297E19 /* Utils.h */,
+				46FBFF892290926B00297E19 /* Utils.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		46FBFF75229091DF00297E19 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				46FBFF70229091BA00297E19 /* Util */,
+				46FBFF76229091EE00297E19 /* Reachability */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		46FBFF76229091EE00297E19 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				46FBFF852290925200297E19 /* AGReachabilityManager.h */,
+				46FBFF832290925200297E19 /* AGReachabilityManager.m */,
+				46FBFF842290925200297E19 /* Reachability.h */,
+				46FBFF862290925200297E19 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		46FBFF7D2290920400297E19 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				46FBFF822290923C00297E19 /* Constants.h */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		46FBFF8C2290936300297E19 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				46FBFF8D2290936900297E19 /* AlbumList */,
+				46FBFF8E2290937100297E19 /* AlbumDetails */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		46FBFF8D2290936900297E19 /* AlbumList */ = {
+			isa = PBXGroup;
+			children = (
+				46FBFFA72290947100297E19 /* View */,
+				46FBFFA02290943000297E19 /* Interector */,
+				46FBFF9A229093FB00297E19 /* Presenter */,
+				46FBFF96229093E500297E19 /* Entity */,
+				46FBFF8F2290937F00297E19 /* Router */,
+			);
+			path = AlbumList;
+			sourceTree = "<group>";
+		};
+		46FBFF8E2290937100297E19 /* AlbumDetails */ = {
+			isa = PBXGroup;
+			children = (
+				46FBFFBD2290951000297E19 /* View */,
+				46FBFFB8229094F600297E19 /* Presenter */,
+				46FBFFB4229094E800297E19 /* Router */,
+			);
+			path = AlbumDetails;
+			sourceTree = "<group>";
+		};
+		46FBFF8F2290937F00297E19 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				46EC05122291D928009AE2D7 /* Configurator */,
+				46FBFF94229093C800297E19 /* Protocol_Router */,
+				46FBFF92229093BE00297E19 /* AlbumWireframe.h */,
+				46FBFF91229093BE00297E19 /* AlbumWireframe.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		46FBFF94229093C800297E19 /* Protocol_Router */ = {
+			isa = PBXGroup;
+			children = (
+				46FBFF95229093D900297E19 /* AlbumWireframeProtocol.h */,
+			);
+			path = Protocol_Router;
+			sourceTree = "<group>";
+		};
+		46FBFF96229093E500297E19 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				46FBFF97229093F000297E19 /* AlbumEntity.h */,
+				46FBFF98229093F000297E19 /* AlbumEntity.m */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		46FBFF9A229093FB00297E19 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				46FBFF9F2290940F00297E19 /* Protocol_Presenter */,
+				46FBFF9B2290940500297E19 /* AlbumPresenter.h */,
+				46FBFF9C2290940500297E19 /* AlbumPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		46FBFF9F2290940F00297E19 /* Protocol_Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				46FBFF9E2290940C00297E19 /* PresenterToInetractorProtocol.h */,
+			);
+			path = Protocol_Presenter;
+			sourceTree = "<group>";
+		};
+		46FBFFA02290943000297E19 /* Interector */ = {
+			isa = PBXGroup;
+			children = (
+				46EC05112291D90B009AE2D7 /* Parser */,
+				46FBFFA62290944F00297E19 /* Protocol_Interector */,
+				46FBFFA22290944300297E19 /* AlbumInteractor.h */,
+				46FBFFA12290944300297E19 /* AlbumInteractor.m */,
+			);
+			path = Interector;
+			sourceTree = "<group>";
+		};
+		46FBFFA62290944F00297E19 /* Protocol_Interector */ = {
+			isa = PBXGroup;
+			children = (
+				46FBFFA52290944A00297E19 /* AlbumInteractorOutPutProtocol.h */,
+				46FBFFA42290944A00297E19 /* AlbumInteractorProtocol.h */,
+			);
+			path = Protocol_Interector;
+			sourceTree = "<group>";
+		};
+		46FBFFA72290947100297E19 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				46FBFFAF2290949C00297E19 /* Protocol_View */,
+				46FBFFA92290948100297E19 /* AlbumView.h */,
+				46FBFFAB2290948100297E19 /* AlbumView.m */,
+				46FBFFAE2290948700297E19 /* AlbumListCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		46FBFFAE2290948700297E19 /* AlbumListCell */ = {
+			isa = PBXGroup;
+			children = (
+				46FBFFA82290948100297E19 /* AlbumTableCell.h */,
+				46FBFFAA2290948100297E19 /* AlbumTableCell.m */,
+			);
+			path = AlbumListCell;
+			sourceTree = "<group>";
+		};
+		46FBFFAF2290949C00297E19 /* Protocol_View */ = {
+			isa = PBXGroup;
+			children = (
+				46FBFFB0229094AF00297E19 /* AlbumViewProtocol.h */,
+			);
+			path = Protocol_View;
+			sourceTree = "<group>";
+		};
+		46FBFFB4229094E800297E19 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				46EC05132291D937009AE2D7 /* Configurator */,
+				46FBFFB1229094E500297E19 /* AlbumDetailsRouter.h */,
+				46FBFFB2229094E500297E19 /* AlbumDetailsRouter.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		46FBFFB8229094F600297E19 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				46FBFFB6229094F200297E19 /* AlbumDetailsPresenter.h */,
+				46FBFFB5229094F200297E19 /* AlbumDetailsPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		46FBFFBD2290951000297E19 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				46FBFFBF2290951E00297E19 /* ProtocolView */,
+				46FBFFB92290950600297E19 /* AlbumDetailsVC.h */,
+				46FBFFBA2290950600297E19 /* AlbumDetailsVC.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		46FBFFBF2290951E00297E19 /* ProtocolView */ = {
+			isa = PBXGroup;
+			children = (
+				46FBFFBE2290951B00297E19 /* AlbumDetailsViewProtocol.h */,
+			);
+			path = ProtocolView;
+			sourceTree = "<group>";
+		};
+		46FBFFC02290953A00297E19 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				46FBFFC12290955000297E19 /* AGDialog.framework */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46EC04F72291C052009AE2D7 /* Album_RSS_FeedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46EC04FF2291C053009AE2D7 /* Build configuration list for PBXNativeTarget "Album_RSS_FeedTests" */;
+			buildPhases = (
+				46EC04F42291C052009AE2D7 /* Sources */,
+				46EC04F52291C052009AE2D7 /* Frameworks */,
+				46EC04F62291C052009AE2D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46EC04FE2291C053009AE2D7 /* PBXTargetDependency */,
+			);
+			name = Album_RSS_FeedTests;
+			productName = Album_RSS_FeedTests;
+			productReference = 46EC04F82291C052009AE2D7 /* Album_RSS_FeedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		46FBFF332290910C00297E19 /* Album_RSS_Feed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46FBFF602290910E00297E19 /* Build configuration list for PBXNativeTarget "Album_RSS_Feed" */;
+			buildPhases = (
+				46FBFF302290910C00297E19 /* Sources */,
+				46FBFF312290910C00297E19 /* Frameworks */,
+				46FBFF322290910C00297E19 /* Resources */,
+				4618A951229096C400F30E3C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Album_RSS_Feed;
+			productName = Album_RSS_Feed;
+			productReference = 46FBFF342290910C00297E19 /* Album_RSS_Feed.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46FBFF2C2290910C00297E19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = abhishek;
+				TargetAttributes = {
+					46EC04F72291C052009AE2D7 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 46FBFF332290910C00297E19;
+					};
+					46FBFF332290910C00297E19 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 46FBFF2F2290910C00297E19 /* Build configuration list for PBXProject "Album_RSS_Feed" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46FBFF2B2290910C00297E19;
+			productRefGroup = 46FBFF352290910C00297E19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46FBFF332290910C00297E19 /* Album_RSS_Feed */,
+				46EC04F72291C052009AE2D7 /* Album_RSS_FeedTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46EC04F62291C052009AE2D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46FBFF322290910C00297E19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46FBFF442290910E00297E19 /* LaunchScreen.storyboard in Resources */,
+				46FBFF412290910E00297E19 /* Assets.xcassets in Resources */,
+				46FBFF3F2290910C00297E19 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46EC04F42291C052009AE2D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46EC04FB2291C053009AE2D7 /* Album_RSS_FeedTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46FBFF302290910C00297E19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46FBFF93229093BE00297E19 /* AlbumWireframe.m in Sources */,
+				46FBFF6E2290919400297E19 /* AppDelegate.m in Sources */,
+				46EC050D2291CA86009AE2D7 /* AlbumConfigurator.m in Sources */,
+				46FBFF872290925200297E19 /* AGReachabilityManager.m in Sources */,
+				46FBFFBB2290950600297E19 /* AlbumDetailsVC.m in Sources */,
+				46FBFF472290910E00297E19 /* main.m in Sources */,
+				46FBFFAD2290948100297E19 /* AlbumView.m in Sources */,
+				46EC05102291D0B2009AE2D7 /* AlbumDetailConfigurator.m in Sources */,
+				46FBFFAC2290948100297E19 /* AlbumTableCell.m in Sources */,
+				46FBFF9D2290940500297E19 /* AlbumPresenter.m in Sources */,
+				46EC050A2291C621009AE2D7 /* AlbumEntityParser.m in Sources */,
+				46FBFF99229093F000297E19 /* AlbumEntity.m in Sources */,
+				46FBFF8B2290926B00297E19 /* Utils.m in Sources */,
+				46FBFF882290925200297E19 /* Reachability.m in Sources */,
+				46FBFFA32290944300297E19 /* AlbumInteractor.m in Sources */,
+				46FBFFB7229094F200297E19 /* AlbumDetailsPresenter.m in Sources */,
+				46FBFFB3229094E500297E19 /* AlbumDetailsRouter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46EC04FE2291C053009AE2D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46FBFF332290910C00297E19 /* Album_RSS_Feed */;
+			targetProxy = 46EC04FD2291C053009AE2D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		46FBFF3D2290910C00297E19 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46FBFF3E2290910C00297E19 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		46FBFF422290910E00297E19 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46FBFF432290910E00297E19 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46EC05002291C053009AE2D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Album_RSS_FeedTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gour.abhi.Album-RSS-FeedTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Album_RSS_Feed.app/Album_RSS_Feed";
+			};
+			name = Debug;
+		};
+		46EC05012291C053009AE2D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Album_RSS_FeedTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gour.abhi.Album-RSS-FeedTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Album_RSS_Feed.app/Album_RSS_Feed";
+			};
+			name = Release;
+		};
+		46FBFF5E2290910E00297E19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		46FBFF5F2290910E00297E19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46FBFF612290910E00297E19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Album_RSS_Feed/Libraries",
+				);
+				INFOPLIST_FILE = Album_RSS_Feed/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gour.abhi.Album-RSS-Feed";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46FBFF622290910E00297E19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Album_RSS_Feed/Libraries",
+				);
+				INFOPLIST_FILE = Album_RSS_Feed/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gour.abhi.Album-RSS-Feed";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46EC04FF2291C053009AE2D7 /* Build configuration list for PBXNativeTarget "Album_RSS_FeedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46EC05002291C053009AE2D7 /* Debug */,
+				46EC05012291C053009AE2D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46FBFF2F2290910C00297E19 /* Build configuration list for PBXProject "Album_RSS_Feed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46FBFF5E2290910E00297E19 /* Debug */,
+				46FBFF5F2290910E00297E19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46FBFF602290910E00297E19 /* Build configuration list for PBXNativeTarget "Album_RSS_Feed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46FBFF612290910E00297E19 /* Debug */,
+				46FBFF622290910E00297E19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46FBFF2C2290910C00297E19 /* Project object */;
+}

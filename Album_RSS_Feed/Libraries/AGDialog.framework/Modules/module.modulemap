@@ -1,0 +1,11 @@
+framework module AGDialog {
+  umbrella header "AGDialog.h"
+
+  export *
+  module * { export * }
+}
+
+module AGDialog.Swift {
+    header "AGDialog-Swift.h"
+    requires objc
+}
