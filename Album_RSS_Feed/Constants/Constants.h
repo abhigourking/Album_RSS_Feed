@@ -12,7 +12,7 @@
 /*
     This Class have all the texts and the required theme for the app. You can change the theme and any text from here only.
     Source URL : https://rss.itunes.apple.com/en-us
-    GIT URL : https://github.com/abhigourking/AppleRssFeed_Viper.git
+    GIT URL : https://github.com/abhigourking/Album_RSS_Feed.git
  */
 
 #define ALBUM_URL @"https://rss.itunes.apple.com/api/v1/us/apple-music/top-albums/all/50/explicit.json"
