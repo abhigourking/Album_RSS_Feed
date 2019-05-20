@@ -98,41 +98,4 @@
 }
 
 @end
-/*
- -(void)testThatTableViewLoads
- {
- dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
- XCTAssertNotNil(self.albumVC.albumTableView, @"TableView not initiated");
- }
- 
- - (void)testThatTableViewHasDataSource
- {
- XCTAssertNotNil(self.albumVC.albumTableView.dataSource, @"Table datasource cannot be nil");
- }
- 
- - (void)testTableViewIsConnectedToDelegate
- {
- XCTAssertNotNil(self.albumVC.albumTableView.delegate, @"Table delegate cannot be nil");
- }
- 
- - (void)testTableViewNumberOfRowsInSection
- {
- NSInteger expectedRows = 15;
- XCTAssertTrue([self.albumVC tableView:self.albumVC.albumTableView numberOfRowsInSection:0]==expectedRows, @"Table has %ld rows but it should have %ld", (long)[self.albumVC tableView:self.albumVC.albumTableView numberOfRowsInSection:0], (long)expectedRows);
- }
- 
- - (void)testTableViewHeightForRowAtIndexPath
- {
- CGFloat expectedHeight = 44.0;
- CGFloat actualHeight = self.albumVC.albumTableView.rowHeight;
- XCTAssertEqual(expectedHeight, actualHeight, @"Cell should have %f height, but they have %f", expectedHeight, actualHeight);
- }
- 
- - (void)testTableViewCellCreateCellsWithReuseIdentifier
- {
- NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
- UITableViewCell *cell = [self.albumVC tableView:self.albumVC.albumTableView cellForRowAtIndexPath:indexPath];
- NSString *expectedReuseIdentifier = @"AlbumCellIdentifier";
- XCTAssertTrue([cell.reuseIdentifier isEqualToString:expectedReuseIdentifier], @"Table does not create reusable cells");
- }
- */
+

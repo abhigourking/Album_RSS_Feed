@@ -27,29 +27,29 @@
     
     AlbumEntity *album = [[AlbumEntity alloc] init];
     
-    if([dict valueForKey:@"name"] != nil){
+    if(dict[@"name"] != nil){
         album.strName = dict [@"name"];
     }
-    if([dict valueForKey:@"releaseDate"] != nil){
-        album.strReleaseDate = [dict valueForKey:@"releaseDate"];
+    if(dict[@"releaseDate"] != nil){
+        album.strReleaseDate = dict[@"releaseDate"];
     }
-    if([dict valueForKey:@"copyright"] != nil){
-        album.strCopyRight = [dict valueForKey:@"copyright"];
+    if(dict[@"copyright"] != nil){
+        album.strCopyRight = dict[@"copyright"];
     }
-    if([dict valueForKey:@"artistName"] != nil){
-        album.strArtistName = [dict valueForKey:@"artistName"];
+    if(dict[@"artistName"] != nil){
+        album.strArtistName = dict[@"artistName"];
     }
-    if([dict valueForKey:@"artistId"] != nil){
-        album.strArtistId = [dict valueForKey:@"artistId"];
+    if(dict[@"artistId"] != nil){
+        album.strArtistId = dict[@"artistId"];
     }
-    if([dict valueForKey:@"url"] != nil){
-        album.strArtistURL = [dict valueForKey:@"artistUrl"];
+    if(dict[@"url"] != nil){
+        album.strArtistURL = dict[@"artistUrl"];
     }
-    if([dict valueForKey:@"artworkUrl100"] != nil){
-        album.strAlbumImageURL = [dict valueForKey:@"artworkUrl100"];
+    if(dict[@"artworkUrl100"] != nil){
+        album.strAlbumImageURL = dict[@"artworkUrl100"];
     }
-    if([dict valueForKey:@"id"] != nil){
-        album.strAlbumId = [dict valueForKey:@"id"];
+    if(dict[@"id"] != nil){
+        album.strAlbumId = dict[@"id"];
     }
     
     return album; // Append album to an array
